@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block head %}{% endblock %}
+
+{% block body %}
+
+<div class="container">
+  <div class="row">
+    <div class="col" style="margin-top: 190px;">
+
+      <h1 style="text-align:center; color:rgb(0, 0, 0); background-color: azure;">IMAGE DEBLURRING FOR CCTV CAPTURED IMAGES OF FAST MOVING VEHICLES</h1>
+
+      <form action="/" method="POST" enctype="multipart/form-data" style="text-align:center;">
+
+        <div class="form-group">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" name="image" id="image">
+            <label class="custom-file-label" for="image"></label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">PRESS THIS</button>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

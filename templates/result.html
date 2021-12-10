@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block head %}{% endblock %}
+
+{% block body %}
+<div class='container'>
+<div class="row d-flex justify-content-center " style="margin-top: 200px;">
+<div class="card m-2" style="width: 34rem;">
+    <img src="/static/selectedframes/{{filename}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p style="text-align: center;" class="card-text">ORIGINAL IMAGE</p>
+    </div>
+  </div>
+
+  <div class="card m-2" style="width: 34rem;">
+    <img src="/static/deblur_result/{{filename}}" class="card-img-top" alt="...">
+    <div style="text-align: center;" class="card-body">
+      <p class="card-text">DEBLURRED IMAGE</p>
+    </div>
+  </div>
+  <form action="/npr/{{filename}}" style="text-align:center;">
+  <button type="submit" >PRESS THIS FOR NPR</button>
+</div>
+</div>
+
+
+{% endblock %}

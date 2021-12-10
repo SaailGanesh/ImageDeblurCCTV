@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block head %}{% endblock %}
+
+{% block body %}
+<div style="text-align:center; color:white; font-size: 50px;">Model Architecture</div>
+<div class="card m-4" style="width: 93  rem;">
+    <img src="/static/image/cycle.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+    </div>
+</div>
+<div style="text-align:center; color:white; font-size: 50px;">Training Visualization</div>
+<div class="card m-4" style="width: 93  rem;">
+    <img src="/static/image/passath_a.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+    </div>
+</div>
+<div class="row">
+    <div class="column">
+      <img src="/static/image/passath_a.jpeg" alt="Original"">
+    </div>
+    <div class="column">
+      <img src="/static/image/passath_deblur.jpeg" alt="Deblurred">
+    </div>
+    <div class="column">
+      <img src="/static/image/passath_detection.jpeg" alt="Detected Plate">
+    </div>
+  </div>
+{% endblock %}
